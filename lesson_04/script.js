@@ -20,21 +20,6 @@ console.log(productAmount * productPrice);
       price = '15000';
 }
 
-/* {
-  const resultProduct = prompt('Наименование товара');
-  console.log(typeof resultProduct);
-
-  const resultCount = +prompt('Количество товара');
-  console.log(typeof resultCount);
-
-  const resultCategory = prompt('Категория товара');
-  console.log(typeof resultCategory);
-
-  const resultPrice = +prompt('Цена товара');
-  console.log(typeof resultPrice);
-} */
-
-
 {
   const resultProduct = prompt('Наименование товара'),
         resultCount = +prompt('Количество товара'),
