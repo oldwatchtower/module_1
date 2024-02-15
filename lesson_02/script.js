@@ -1,4 +1,7 @@
-const productName = 'Banana',
+'use strict'
+
+{
+  const productName = 'Banana',
       productCategory = 'Fruit';
 
 let productAmount = 20,
@@ -7,3 +10,12 @@ let productAmount = 20,
 console.log(productName);
 
 console.log(productAmount * productPrice);
+}
+
+{
+  const item = 'phone',
+        category = 'technique';
+  
+  let count = 10,
+      price = '15000';
+}
