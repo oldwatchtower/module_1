@@ -33,3 +33,4 @@ console.log(productAmount * productPrice);
 
   console.log(`На складе ${resultCount} единицы товара ${resultProduct} на сумму ${resultCount * resultPrice}`);
 }
+
