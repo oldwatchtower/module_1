@@ -24,11 +24,10 @@ if (totalScores >= 265) {
 
 /* Задача четыре */
 
-const howMuchMoneyDoYouNeed = prompt('Сколько денег вы хотите снять?');
+/* const howMuchMoneyDoYouNeed = prompt('Сколько денег вы хотите снять?');
 
 if (howMuchMoneyDoYouNeed % 100 === 0) {
   console.log('Идет выдача денег');
 } else {
   console.log('Введите сумму, кратную 100 рублям');
-}
-
+} */
