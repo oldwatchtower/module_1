@@ -1,24 +1,9 @@
-'use strict'
+// console.log(5 == '5');
 
-{
-  const productName = 'Banana',
-      productCategory = 'Fruit';
+/* console.log('ьнанас' > 'аукварь');
+console.log('Ьнанас' > 'аукварь');
+console.log('ананас' < 'букварь'); */
 
-let productAmount = 20,
-    productPrice = 70;
-
-console.log(productName);
-
-console.log(productAmount * productPrice);
-}
-
-{
-  const item = 'phone',
-        category = 'technique';
-  
-  let count = 10,
-      price = '15000';
-}
 
 {
   const resultProduct = prompt('Наименование товара'),
@@ -27,10 +12,19 @@ console.log(productAmount * productPrice);
         resultPrice = +prompt('Цена товара');
   
   console.log(typeof resultProduct);
-  console.log(typeof resultCount);
   console.log(typeof resultCategory);
-  console.log(typeof resultPrice);
+  
+  if (Number.isFinite(resultCount)) {
+    console.log(typeof resultCount);
+  } else {
+    console.log('Вы ввели некорректные данные');
+  }
+  
+  if (Number.isFinite(resultPrice)) {
+    console.log(typeof resultPrice);
+  } else {
+    console.log('Вы ввели некорректные данные');
+  }
 
   console.log(`На складе ${resultCount} единицы товара ${resultProduct} на сумму ${resultCount * resultPrice}`);
 }
-

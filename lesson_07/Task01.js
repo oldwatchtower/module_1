@@ -1,6 +1,10 @@
-for (let i = 2; i <= 10; i ++) {
-  console.log('------------');
-  for (let y = 1; y < 10; y ++) {
-    console.log(`${i} x ${y} = ${i ** y}`);
-  }
-} 
+const filter = (allStud, failStud) => {
+  return allStud.filter((stud) => {
+    return !failStud.includes(stud)
+  });
+}
+
+const allStudents = ['Иванов', 'Петров', 'Сидоров', 'Кузнецов', 'Смирнов', 'Попов', 'Соколов'];
+const failedStudents = ['Сидоров', 'Смирнов', 'Попов'];
+
+console.log(filter(allStudents, failedStudents));

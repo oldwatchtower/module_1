@@ -1,6 +1,6 @@
-const currencyConversion = euro => {
-  const rub = euro * (64 * 1.2);
-  return rub;
-}
-
-console.log(currencyConversion(50));
+for (let i = 2; i <= 10; i ++) {
+  console.log('------------');
+  for (let y = 1; y < 10; y ++) {
+    console.log(`${i} x ${y} = ${i ** y}`);
+  }
+} 

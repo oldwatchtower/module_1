@@ -1,14 +1,9 @@
-function isPrime(n) {
-  if (n === 2 || n === 3) {
-    return true;
-  }
-  if (n <= 1 || n % 2 === 0 || n % 3 === 0) {
-    return false;
-  }
-  for (let i = 5; i * i <= n; i += 6) {
-    if (n % i === 0 || n % (i + 2) === 0) return false;
-  }
-  return true;
+const getAverageValue = (sum) => {
+  const totalSum = sum.reduce((a, b) => {
+    return (a + b)
+  }); 
+  return Math.floor(totalSum / sum.length);
 }
+const allСashbox = [4500, 3210, 650, 1250, 990, 13900, 370];
 
-console.log(isPrime(9));
+console.log(getAverageValue(allСashbox));
