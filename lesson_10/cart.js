@@ -1,3 +1,4 @@
+'use strict';
 const cart = {
   items: [],
   get totalPrice() {
@@ -5,10 +6,10 @@ const cart = {
   },
   count: 0,
   add(name, price, amount) {
-    let item = {
+    const item = {
       name,
       price,
-      amount
+      amount,
     };
     this.items.push(item);
     this.totalPrice += price * amount;
@@ -18,24 +19,22 @@ const cart = {
     return this.count += num;
   },
   calculateItemPrice() {
-    return this.items.reduce((acc, item) => {
-      return acc + item.price * item.amount;
-    }, 0)
+    return this.items.reduce((acc, item) => acc + item.price * item.amount, 0);
   },
   clear() {
     this.items = [],
     this.totalPrice = 0,
-    this.count = 0
+    this.count = 0;
     return cart;
   },
   print() {
-    console.log(JSON.stringify(this.items))
+    console.log(JSON.stringify(this.items));
     return `Общая стоимость корзины ${this.totalPrice}`;
-  }
-}
+  },
+};
 
 cart.add('phone', '35000', 3);
 cart.add('subwoofer', '50000', 2);
 cart.add('computer', '130000', 1);
-console.log(cart.totalPrice)
+console.log(cart.totalPrice);
 console.log(cart.print());
