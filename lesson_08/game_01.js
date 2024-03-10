@@ -3,22 +3,14 @@ const gameBot = () => {
   let userNum;
   console.log(randomNum);
 
-  while (true) {
+  const recurs = () => {
     userNum = prompt('Введите число от 1 до 100');
-    if (userNum === null) {
-      break;
+    if (userNum < 1 || userNum > 100) {
+      return alert('Введи число в пределах от 1 до 100')
+    } else if (isNaN(userNum)) {
+      
     }
-    if (isNaN(userNum)) {
-      alert('Введите число');
-    } else if (userNum > randomNum) {
-      alert('Меньше!');
-    } else if (userNum < randomNum) {
-      alert('Больше!');
-    } else if (userNum == randomNum) {
-      alert('Правильно!');
-      break;
-    }
-  }
+  };
 }
 
 gameBot();
