@@ -32,7 +32,7 @@ const cart = {
     console.log(JSON.stringify(this.items));
     return `Общая стоимость корзины ${this.totalPrice}`;
   },
-  setDiscount (promocode) {
+  set Discount (promocode) {
     if (promocode === 'METHED') {
       return this.discount = 15;
     }
@@ -45,7 +45,7 @@ const cart = {
 cart.add('phone', '35000', 3);
 cart.add('subwoofer', '50000', 2);
 cart.add('computer', '130000', 1);
-cart.setDiscount('NEWYEAR');
+cart.Discount = 'NEWYEAR';
 console.log(cart.discount);
 console.log(cart.totalPrice);
 console.log(cart.print());
